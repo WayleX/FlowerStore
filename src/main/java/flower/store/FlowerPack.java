@@ -8,6 +8,10 @@ public class FlowerPack {
         this.quantity = 1;
         this.flower = new Flower(flower);
     }
+    public FlowerPack(Flower flower, int quantity){
+        this.quantity = quantity;
+        this.flower = new Flower(flower);
+    }    
     public void setQuantity(int num){
         if (num > 0){
             this.quantity = num;
