@@ -6,12 +6,12 @@ import java.util.List;
 
 public class FlowerBucket {
     private List<FlowerPack> Bucket = new ArrayList<FlowerPack>();
-    public FlowerBucket( ArrayList<FlowerPack> Bucket){
+    public FlowerBucket(ArrayList<FlowerPack> Bucket) {
         this.Bucket = Bucket;
     }
-    public FlowerBucket(){
+    public FlowerBucket() {
     }
-    public double getPrice(){
+    public double getPrice() {
         double price = 0;
         for (FlowerPack pack:this.Bucket){
             price += pack.getPrice();
@@ -19,7 +19,7 @@ public class FlowerBucket {
         }
         return price;
     }
-    public void add(FlowerPack pack){
+    public void add(FlowerPack pack) {
         this.Bucket.add(pack);
     }
 }

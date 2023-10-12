@@ -1,4 +1,4 @@
-package flower.store.Filters;
+package flower.store.filters;
 
 import flower.store.Item;
 
