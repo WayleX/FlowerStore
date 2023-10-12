@@ -8,9 +8,10 @@ public class Store {
     public List<Item> search(flower.store.Filters.Filter filter){
         List<Item> foundItems = new ArrayList<Item>();
         for (Item item: items){
-            for (filter.match(item)){
+            if (filter.match(item)){
                 foundItems.add(item);
             }
         }
+        return foundItems;
     }
 }

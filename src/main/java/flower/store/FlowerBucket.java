@@ -9,6 +9,8 @@ public class FlowerBucket {
     public FlowerBucket( ArrayList<FlowerPack> Bucket){
         this.Bucket = Bucket;
     }
+    public FlowerBucket(){
+    }
     public double getPrice(){
         double price = 0;
         for (FlowerPack pack:this.Bucket){
@@ -16,5 +18,8 @@ public class FlowerBucket {
 
         }
         return price;
+    }
+    public void add(FlowerPack pack){
+        this.Bucket.add(pack);
     }
 }
